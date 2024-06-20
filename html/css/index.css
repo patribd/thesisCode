@@ -1,0 +1,51 @@
+.presentation-container {
+    font-family: Arial, sans-serif;
+    font-size: 1.2vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 80vh;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 7vh;
+    margin-left: 5.5vh;
+    margin-right: 5.5vh;
+    height: 62.4vh;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.verticalContainer {
+    display: flex;
+    flex-direction: column;
+    height: 40vh; 
+    text-align: center;
+    margin-top: 7vh;
+}
+
+.row {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#logo{
+    width: 150px;
+    height: 150px;
+}

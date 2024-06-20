@@ -1,0 +1,23 @@
+<IfModule mod_ssl.c>
+    <VirtualHost _default_:5053>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+
+        # Ensure that these paths point to your actual certificate files
+        SSLEngine on
+        SSLCertificateFile /etc/ssl/certs/your_cert.crt
+        SSLCertificateKeyFile /etc/ssl/private/your_private.key
+        # Optional: Include the chain file if required by your certificate
+        # SSLCertificateChainFile /etc/ssl/certs/your_chain.crt
+
+        <Directory /var/www/html>
+            Options Indexes FollowSymLinks
+            AllowOverride All
+            Require all granted
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+    </VirtualHost>
+</IfModule>

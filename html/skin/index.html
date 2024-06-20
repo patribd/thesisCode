@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../icons/router.png">
+    <title>Remote testbed</title>
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+   
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.php">
+                <img src="../images/logo.png" alt="Remote Testbed">
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="../devices.php">Devices</a>
+        <a href="../txPackages.php">Transmitted Packages</a>
+        <a href="../rxPackages.php">Received Packages</a>
+        <a href="../routings.php">Routing Packages</a>
+        <a href="../currents.php">Current Packages</a>
+    </nav>
+
+
+    <div class="container">
+        <div class="column presentation-container">
+            <h3>Remote testbed for measuring the performance of wireless technologies</h3>
+		<br>       
+            <p> The increasing use of Wireless Sensor Networks (WSNs) as Internet of Things (IoT) spreads has turned the importance of choosing efficient devices to compose those networks even greater. </p>
+	    <p>   For that reason, a way of controlling wireless devices was required to be developed. The main aim of this project is to develop an efficient and secure remote testbed. The wireless communication and private network basically consists of a set of network devices that are monitored by an external device that does not interfere with their behavior, which in this case is the central server of the system. 
+	    </p>
+	   <p>The main aim of this project is to  develop a testbed capable of providing information related to different measurements (e.g. latency, energy, throughput…) that requires no physical interaction from the customer. In order to obtain that result, different Odroids M1S will be in charge of obtaining data that will be stored in the system’s database for future studies. The data received by the central server will be represented in a website so future researches can make their own studies and decisions according to the results obtained.  In addition, a second objective was to implement specific configurations in the wireless communication devices, nRF Dongles, configurations specified in a certain binary file. For doing so, a Python script that connects to the wireless devices from the Odroids M1S will be in charge of implementing the new configuration. 
+	   </p>
+	   <p>The correct functioning of the remote testbed was achieved in the lab, but a series of difficulties were presented while computing the system that prevented the system from being implemented for external networks. 
+	   </p>
+	   <br>
+	   <img src='../images/abstract.png' alt="Schema of the system" style="height: 55%; width:50%">
+         </div>
+
+    </div>
+
+</body>
+</html>

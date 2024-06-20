@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../icons/router.png">
+    <title>Remote testbed</title>
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/currents.css">
+   
+</head>
+<body>
+
+    <header>
+        <div>
+            <a href="index.php">
+                <img src="../images/logo.png" alt="Remote Testbed">
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="../index.php">Main Page</a>
+        <a href="../devices.php">Devices</a>
+        <a href="../txPackages.php">Transmitted Packages</a>
+        <a href="../rxPackages.php">Received Packages</a>
+        <a href="../routings.php">Routing Packages</a>
+        <a href="../currents.php">Current Packages</a>
+    </nav>
+
+    <div class="table-container">
+        <div id="title">CURRENT PACKAGES</div>
+        <hr>
+        <div class="flex-container">
+            <div class="column">Device Source ID</div>
+            <div class="column">Value</div>
+            <div class="column">Measurement</div>
+            <div class="column">Float Timestamp</div>
+            <div class="column">Date Timestamp</div>
+        </div>
+	<hr>
+	<br>
+        <!-- ##init_row## -->
+            <div class="flex-containerData">
+                <div class="column">##deviceSourceID##</div>
+                <div class="column">##value##</div>
+                <div class="column">##measurement##</div>
+                <div class="column">##floatTimestamp##</div>
+                <div class="column">##dateTimestamp##</div>
+            </div>
+        <!-- ##end_row## -->
+    </div>
+<center>
+	   
+        <div class="arrows">
+            <!-- ##init_arrow_left## -->
+            <div class="arrowImage"><a href="currents.php?offset=##offsetLeft##"><img src="../icons/left.png" alt="Left Icon" class="arrowImage"></a></div>
+            <!-- ##end_arrow_left## -->
+            <!-- ##init_arrow_right## -->
+            <div class="arrowImage"><a href="currents.php?offset=##offsetRight##"><img src="../icons/right.png" alt="Right Icon" class="arrowImage" style="margin-left: 15%;" id="right"></a></div>
+            <!-- ##end_arrow_right## -->
+        </div>
+</center>    
+
+</body>
+</html>
